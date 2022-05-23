@@ -1,0 +1,35 @@
+//************************************************//
+//Name: Hashmeet Singh Saini
+//Student Number : 153070214
+//Section : NFF
+//Seneca Email : hsaini28@myseneca.ca
+//************************************************//
+In workshop 1 part 1, I learned the significance and 
+layout of putting safeguards (ifndef-endif) in header 
+file I also learnt about the concept of using namespaces 
+as I created a namespace called sdds and used namespaces 
+sdds and std. This helped me convert a long piece of code 
+into different modules that seamlessly work together to 
+create an application.
+
+In workshop 2 part 2, at first I was having a hard time 
+to think of a logic that differentiates between question 
+and answers while loading quiz files into the structs 
+After lots of effort I took help from my friend Sebastian 
+Rubina  Schanez (fellow classmate) in creating the LoadQuiz 
+and loadQues. Based on this these functions I progressed 
+ahead by making other valid structs and functions that 
+accomplished the targets of this part -2 of workshop. 
+One tricky part I had to go through was the function 
+IsQuizValid().  When I began framing the logic for this 
+code, it had several loops and if statements that made the 
+function complicated. Also previously I was storing the 
+type of question as a string “mc” or “ma” in the structs 
+which seemed to break the code at line strcmp 
+(quiztemp.ques[i].type, “mc”). So to tackle these 
+situations I framed a simpler logic to check if every 
+question and quiz is valid and also I modified my struc 
+to hold type as ‘C’ (char) instead of a character array. 
+This eliminated the need of using strcmp function and the 
+code line was changed to quiztemp.ques[i].type==“mc”. I 
+learned how to design structs and functions in this workshop.
