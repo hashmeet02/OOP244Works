@@ -29,9 +29,6 @@ namespace sdds {
 			cout << "Birthdate search program" << endl;
 			flag = true;
 			employees = new Employee[noOfEmployees];
-			fgetc(fp);
-			fgetc(fp);
-			fgetc(fp);
 			for (i = 0; i < noOfEmployees; i++) {
 				testLoad = loadData(employees[i]);
 				if (!testLoad) {
@@ -57,14 +54,14 @@ namespace sdds {
 		bool flag = false;
 
 		for (i = 0; i < noOfEmployees; i++) {
-			if (employees[i].dates->m_month == month) {
+			if (employees[i].m_date.m_month == month) {
 				empCounter++;
 				flag = true;
 			}
 			eligibleEmp = new Employee[empCounter];
 		}
 		for (i = 0; i < noOfEmployees; i++) {
-			if (employees[i].dates->m_month == month) {
+			if (employees[i].m_date.m_month == month) {
 				eligibleEmp[j] = employees[i];
 				j++;
 			}
@@ -77,13 +74,13 @@ namespace sdds {
 		Employee temp;
 		for (i = empCounter - 1; i > 0; i--) {
 			for (j = 0; j < i; j++) {
-				if (eligibleEmp[j].dates->m_year > eligibleEmp[j + 1].dates->m_year) {
+				if (eligibleEmp[j].m_date.m_year > eligibleEmp[j + 1].m_date.m_year) {
 					temp = eligibleEmp[j];
 					eligibleEmp[j] = eligibleEmp[j + 1];
 					eligibleEmp[j + 1] = temp;
 				}
-				else if (eligibleEmp[j].dates->m_year == eligibleEmp[j + 1].dates->m_year) {
-					if (eligibleEmp[j].dates->m_day > eligibleEmp[j + 1].dates->m_day) {
+				else if (eligibleEmp[j].m_date.m_year == eligibleEmp[j + 1].m_date.m_year) {
+					if (eligibleEmp[j].m_date.m_day > eligibleEmp[j + 1].m_date.m_day) {
 						temp = eligibleEmp[j];
 						eligibleEmp[j] = eligibleEmp[j + 1];
 						eligibleEmp[j + 1] = temp;
@@ -95,10 +92,10 @@ namespace sdds {
 
 	void displayBirthdays() {
 		int i = 0;
-		cout << empCounter << " birthdates found:" << endl;
+		cout << empCounter << " birthm_date found:" << endl;
 		for (i = 0; i < empCounter; i++) {
 			cout << i + 1 << ") " << eligibleEmp[i].m_Name << ":" << endl;
-			cout << eligibleEmp[i].dates->m_year << "-" << eligibleEmp[i].dates->m_month << "-" << eligibleEmp[i].dates->m_day << endl;
+			cout << eligibleEmp[i].m_date.m_year << "-" << eligibleEmp[i].m_date.m_month << "-" << eligibleEmp[i].m_date.m_day << endl;
 			cout << "===================================" << endl;
 		}
 	}
@@ -136,7 +133,7 @@ namespace sdds {
 		char tempName[256];
 		int length;
 
-		test = fscanf(fp, "%[^,],%d/%d/%d", tempName, &emp.dates->m_month,&emp.dates->m_day,&emp.dates->m_year);
+		test = fscanf(fp, "%[^,],%d/%d/%d", tempName, &emp.m_date.m_month,&emp.m_date.m_day,&emp.m_date.m_year);
 		if (test == 4) {
 			length = strlen(tempName) + 1;
 			emp.m_Name = new char[length];

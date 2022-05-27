@@ -9,7 +9,7 @@ namespace sdds {
 	};
 	struct Employee {
 		char* m_Name;
-		struct Date* dates;
+	   Date m_date;
 	};
 
 	bool beginSearch(const char* filename);
