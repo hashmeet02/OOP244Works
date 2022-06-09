@@ -1,3 +1,14 @@
+//***********************************************************
+//Reflection Workshop 2 Part 2
+//Name:			Hashmeet Singh Saini
+//Seneca ID : hsaini28
+//Student No. : 153070214
+//Date : May 28, 2022
+//I have done all the coding by myselfand only copied the code 
+//that my professor provided to complete my workshopsand 
+//assignments.
+//***********************************************************
+
 #define _CRT_SECURE_NO_WARNINGS
 #include "BirthDate.h"
 #include <cstdio>
@@ -6,9 +17,11 @@
 
 using namespace std;
 namespace sdds {
-	FILE* fp=nullptr;
+	//Global Variable
 	Employee* employees = nullptr;
-	Employee* eligibleEmp = nullptr;
+	Employee eligibleEmp[20];
+	FILE* fp=nullptr;
+	
 	int noOfEmployees = 0;
 	int empCounter = 0;
 
@@ -58,7 +71,6 @@ namespace sdds {
 				empCounter++;
 				flag = true;
 			}
-			eligibleEmp = new Employee[empCounter];
 		}
 		for (i = 0; i < noOfEmployees; i++) {
 			if (employees[i].m_date.m_month == month) {
@@ -92,9 +104,9 @@ namespace sdds {
 
 	void displayBirthdays() {
 		int i = 0;
-		cout << empCounter << " birthm_date found:" << endl;
+		cout << empCounter << " birthdates found:" << endl;
 		for (i = 0; i < empCounter; i++) {
-			cout << i + 1 << ") " << eligibleEmp[i].m_Name << ":" << endl;
+			cout << i + 1 <<") " << eligibleEmp[i].m_Name + 1 << ":" << endl;
 			cout << eligibleEmp[i].m_date.m_year << "-" << eligibleEmp[i].m_date.m_month << "-" << eligibleEmp[i].m_date.m_day << endl;
 			cout << "===================================" << endl;
 		}
@@ -106,9 +118,6 @@ namespace sdds {
 		}
 		delete[] employees;
 		employees = nullptr;
-		delete[] eligibleEmp;
-		eligibleEmp = nullptr;
-
 	}
 
 	void endSearch() {
