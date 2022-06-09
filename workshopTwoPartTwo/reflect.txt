@@ -1,0 +1,27 @@
+***********************************************************
+            Reflection Workshop 2 Part 2
+Name:			Hashmeet Singh Saini
+Seneca ID:		hsaini28
+Student No.:	153070214
+Date:			May 28, 2022
+I have done all the coding but received help from professor 
+Fardad Soleimanloo in struct definition by myself and only 
+copied the code that my professor provided to complete my 
+workshops and assignments.
+***********************************************************
+
+In this week's reflection I learned the concept of
+function overloading which focussed on how functions
+with same name but different parameter types are essentially
+two different function in C++. I used this concept in Part 1
+of this week's workshop to create 3 overloads of read function 
+that read the content from the file, but one read char string, 
+one read integer number and one raed char. I also created two
+overload functions of load().
+Another concept I learned was allocating dynamic memory for 
+structure arrays and character strings. I got to use this 
+feature in both part 1 and part 2 of this workshop to hold the
+records imported from a file. In part 2 I did have to difficulty 
+in importing data from the text file due to file corruption
+and struct design but with the help of professor Fardad 
+Soleimanloo I was able to successfully finish this workshop.

@@ -1,0 +1,26 @@
+*******************************************************************
+Reflection Workshop 3 Part 2
+Name:			Hashmeet Singh Saini
+Seneca ID:		hsaini28
+Student No.:		153070214
+Date:			June 02, 2022
+I have done all the coding by myself and only copied the code that 
+my professor provided to complete my workshops and assignments.
+*******************************************************************
+In this week’s workshop, I learned to work with an object called 
+class. This workshop was the first biggest step into object 
+orientation as I learned how I can instantiate a defined class, how 
+I can privatize members of a class and also declare member functions 
+that help me access the private members. Another small concept that 
+I learned was declaring variables and setting them straight to a 
+safe state by using {}. Where part 1 of this week’s workshop 
+focussed on the usage of a basic class and the precision function of 
+cout, part 2 took this concept to the next level as it required me 
+to create a class object nested inside another class object. Also, 
+it required me to use other functions of cout family like width, 
+fill and set to set the spacing, mention what kind of spacing, 
+and what alignment of text I want in the output respectively. I also 
+created two dynamically allocated arrays to store the title of the 
+chart and the array of bars in the barChart class. This workshop was 
+well-paced, with simpler objectives in part 1 and tougher in part 2 
+making it fun to learn and understand.
