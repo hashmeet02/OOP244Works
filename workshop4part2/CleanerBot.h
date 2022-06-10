@@ -49,8 +49,8 @@ namespace sdds {
 		const CleanerBot& display()const;
 
 	};
-
+	void lowBatteryHeader(int lowDevices);
+	void displayHeader();
 	int report(CleanerBot* bot, const short num_bots);
-	void sort(CleanerBot* bot, const short num_bots);
 }
 #endif // !SDDS_CLEANERBOT_H
