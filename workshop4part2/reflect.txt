@@ -1,0 +1,27 @@
+*******************************************************************
+			  Reflection Workshop 4 Part 2
+Name: Hashmeet Singh Saini
+Seneca ID : hsaini28
+Student No. : 153070214
+Date : June 09, 2022
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*******************************************************************
+
+In this week’s workshop, the main concept that I worked on was 
+creating and using constructors. I learned how I can define new 
+Constructors- default and overloaded. In addition to that, I 
+created a destructor for my class which gave me full control over 
+how my class object would be created and deleted. To assist me 
+with creating dynamic character string arrays, every time I want to 
+use some strings as class Members, I created a separate Utility module 
+which eliminated the need to write a lengthy series of code lines 
+repeatedly. I further learned how to decide what member variables 
+and methods should be private or public and what functions need to 
+be helper functions. I expanded my knowledge on the use of cout 
+functions that help me enhance the format of the content of the 
+application displayed. In part 2 sorting the data in descending 
+order according to the battery was the toughest part of this week’s 
+workshop due to memory leak problems but I was able to correct 
+those with the help of a different logic that eliminated the 
+use of additional dynamic memory.

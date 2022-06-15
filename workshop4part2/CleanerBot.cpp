@@ -1,7 +1,18 @@
+//*******************************************************************
+//Reflection Workshop 4 Part 2
+//Name:			Hashmeet Singh Saini
+//Seneca ID : hsaini28
+//Student No. : 153070214
+//Date : June 09, 2022
+//I have done all the coding by myself and only copied the code that
+//my professor provided to complete my workshops and assignments.
+//*******************************************************************
+
 #include <iostream>
 #include <cstring>
-#include "CleanerBot.h"
 #include "Utils.h"
+#include "CleanerBot.h"
+
 
 
 using namespace std;
@@ -160,12 +171,9 @@ namespace sdds {
 		cout << "|------------+---------+--------------------+--------|" << endl;
 	}
 
-	int report(CleanerBot* bot, const short num_bots) {
-
-		displayHeader();
-		int lowBatCounter = 0;
-		int largestBattery = 0;
-		double bat[8];
+	int lowBatteryCounter(CleanerBot* bot, const short num_bots)
+	{
+		int lowBatCounter=0;
 		for (int i = 0; i < num_bots; i++) {
 			if (bot[i].isValid()) {
 				bot[i].display();
@@ -173,12 +181,19 @@ namespace sdds {
 					lowBatCounter++;
 				}
 			}
-
 		}
-		lowBatteryHeader(lowBatCounter);
-		
-		
-		for (int i = 0; i < 8; i++) {
+		return lowBatCounter;
+	}
+
+	int report(CleanerBot* bot, const short num_bots) {
+
+		displayHeader();
+		int largestBattery = 0;
+		double* bat;
+		bat = new double[num_bots];
+		lowBatteryHeader(lowBatteryCounter(bot, num_bots));
+				
+		for (int i = 0; i < num_bots; i++) {
 			if (bot[i].isValid()) {
 				bat[i] = bot[i].getBattery();
 			}
@@ -199,6 +214,8 @@ namespace sdds {
 				bot[largestBattery].display();
 			}
 		}
+		delete[] bat;		//deallocating dynamic array
+		bat = nullptr;
 		cout << "|====================================================|" << endl;
 		return 1;
 	}
