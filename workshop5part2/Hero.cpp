@@ -1,3 +1,13 @@
+//*******************************************************************
+//Reflection Workshop 5 Part 2
+//Name:			Hashmeet Singh Saini
+//Seneca ID : hsaini28
+//Student No. : 153070214
+//Date : June 15, 2022
+//I have done all the coding by myself and only copied the code that
+//my professor provided to complete my workshops and assignments.
+//*******************************************************************
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <cstring>
@@ -35,6 +45,9 @@ namespace sdds {
 			this->m_num_of_powers = numPowers;
 			this->m_power_level = raritySum * numPowers;
 		}
+		else {
+			this->setEmpty();
+		}
 	}
 
 	Hero::~Hero()
@@ -45,32 +58,23 @@ namespace sdds {
 
 	int Hero::add_power(Power* p)
 	{
-		int raritySum = 0;
-		Power* temp{};
-		temp = new Power[this->m_num_of_powers + 1];
-		for (int i = 0; i < m_num_of_powers; i++) {
-			temp[i] = m_powers[i];
-			raritySum += temp[i].checkRarity();
+		if (!p->isEmpty()) {
+			int raritySum = 0;
+			Power* temp{};
+			temp = new Power[this->m_num_of_powers + 1];
+			for (int i = 0; i < m_num_of_powers; i++) {
+				temp[i] = m_powers[i];
+				raritySum += temp[i].checkRarity();
+			}
+			temp[m_num_of_powers] = *p;
+			raritySum += temp[m_num_of_powers].checkRarity();
+			delete[] m_powers;
+			m_powers = nullptr;
+			m_powers = temp;
+			m_num_of_powers += 1;
+			this->m_power_level = raritySum * m_num_of_powers;
 		}
-		temp[m_num_of_powers] = *p;
-		raritySum += temp[m_num_of_powers].checkRarity();
-		delete[] m_powers;
-		m_powers = nullptr;
-		m_powers = temp;
-		m_num_of_powers += 1;
-		this->m_power_level = raritySum * m_num_of_powers;
 		return m_num_of_powers;
-
-		//m_powers[m_num_of_powers + 1] = *p;
-		//m_num_of_powers += 1;
-		//for (int i = 0; i < m_num_of_powers; i++) {
-		//	if (p[i].checkName()) {
-		//		m_powers[i] = p[i];
-		//		raritySum += m_powers[i].checkRarity();
-		//	}
-		//}
-		//this->m_power_level = raritySum * m_num_of_powers;
-		//return m_num_of_powers;
 	}
 
 	int Hero::getPowerLevel() const
@@ -78,9 +82,8 @@ namespace sdds {
 		return this->m_power_level;
 	}
 
-	std::ostream& Hero::display(/*std::ostream& os*/) const
+	std::ostream& Hero::display() const
 	{
-		/*cout.setf(std::ios::left);*/
 		cout << "Name: " << this->m_name << endl;
 		displayDetails(this->m_powers, this->m_num_of_powers);
 		cout << "Power Level: " << this->m_power_level;
@@ -98,17 +101,6 @@ namespace sdds {
 		m_power_level -= powerLevelReduc;
 		return *this;
 	}
-
-
-	//std::ostream& Book::display(std::ostream& os) const
-	//{
-	//	os << "Title:\'" << m_title << "\'" << endl;
-	//	os << "Author: \'" << m_author << "\'" << endl;
-	//	for (int i = 0; i < m_num_chapters; i++) {
-	//		m_chapters[i].display(os);
-	//	}
-	//	return os;
-	//}
 
 	bool operator<(Hero& leftOpr, Hero& rightOpr)
 	{
@@ -131,7 +123,7 @@ namespace sdds {
 	}
 
 	std::ostream& operator<<(std::ostream& leftOper, const Hero& righOper) {
-		return righOper.display(/*leftOper*/);
+		return righOper.display();
 	}
 
 }

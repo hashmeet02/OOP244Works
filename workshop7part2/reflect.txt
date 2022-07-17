@@ -1,0 +1,24 @@
+*******************************************************************
+Reflection Workshop 7 Part 2
+Name:			Hashmeet Singh Saini
+Seneca ID : hsaini28
+Student No. : 153070214
+Date : July 13, 2022
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*******************************************************************
+In this workshop, I learned and strengthened the concepts of derived 
+and base class which follows the form of Inheritance. I also learned 
+how to use the concept of shadow to override base class functions 
+with derived class functions to use the same-named functions with 
+different purposes for the base and different classes. This also 
+involved learning how to call a shadowed member function from the 
+base class using scope resolution. I also strengthened my concept 
+around extraction and insertion operator overloads used for input and 
+output and also as operators which add data to a class. In this 
+workshop memberParliament was a base class, through which I inherited 
+a derived class named Minister. I learned the format to create a 
+derived class and the use of access keywords- private, public and 
+protected. For this workshop, the toughest part was the creation of 
+the derived class itself but I was able to do it easily once I went 
+through the weekly notes. 

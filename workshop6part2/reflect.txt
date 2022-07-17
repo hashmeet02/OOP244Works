@@ -1,0 +1,23 @@
+*******************************************************************
+Reflection Workshop 6 Part 2
+Name:			Hashmeet Singh Saini
+Seneca ID : hsaini28
+Student No. : 153070214
+Date : July 5, 2022
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*******************************************************************
+In this week’s workshop, I learned a variety of things making a C++ 
+class more intuitive to use. This involved the creation of a copy 
+constructor and a copy assignment operator which enable the formation 
+of a new constructor using an existing constructor. Additionally, I 
+learned to use the different functions of the fstream object which 
+were required to be used in part 1 of workshop as I created a code 
+that counts the number of records in the file on the basis of newline 
+characters and also loads the different records (doubles in this 
+situation) in a dynamically allocated class. Moreover, I learned to 
+create an input operator function with a read function enabling me 
+to obtain data from the user. I also learned how I could resize my 
+dynamically allocated array whenever I wanted to add a new record to 
+the array. This was not the most challenging workshop, but I had fun 
+doing it as it helped boost my confidence.

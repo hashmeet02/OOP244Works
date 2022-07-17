@@ -1,0 +1,27 @@
+*******************************************************************
+Reflection Workshop 5 Part 2
+Name:			Hashmeet Singh Saini
+Seneca ID : hsaini28
+Student No. : 153070214
+Date : June 15, 2022
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*******************************************************************
+This week’s workshop focused on overloading operators to make 
+classes easier to use. The first part of the workshop was more 
+intensive in terms of overloading member operators which included 
+binary operators like +=, -+, <<, unary operators like postfix ++ 
+and prefix ++ and -- along with several casting operators which 
+allowed me to cast my class object to obtain various kinds of 
+results. In addition to this, I learned the proper functionality of 
+using ostream objects to create display functions that help me not 
+only display but bring cascading effects to the objects. I learned 
+how to properly create the operator prototypes, where to return 
+references, where the function needs to be const and more. In the 
+second part of the workshop, I learned how to define and create 
+helper operators. The trickiest part in my opinion was handling the 
+dynamic array of powers as I needed to come up with a way that 
+extended this array every time, I wanted to add power to the Hero 
+object. After spending some time thinking about a logic, I was 
+able to come up with a way and I successfully completed the workshop 
+with no memory leaks.
