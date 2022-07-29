@@ -1,0 +1,27 @@
+*******************************************************************
+Reflection Workshop 9 Part 2
+Name:			Hashmeet Singh Saini
+Seneca ID : hsaini28
+Student No. : 153070214
+Date : July 26, 2022
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*******************************************************************
+The main learning concept of this workshop was creating a derived 
+class which has a resource (dynamically allocated attributes). In 
+this workshop the base class Name which stored a dynamically 
+allocated first name and FullName was the class derived from Name 
+that contained the dynamically allocated last name. Name class 
+had a few virtual and non-virtual methods which were overridden 
+in the FullName class. I also learned how to correctly implement 
+the rule of three, which is the creation of a copy constructor, 
+copy assignment operator and a destructor, for a derived class 
+with a resource. This was a trickier part to code but I used my 
+prior codes and the new weekly notes to correctly program the rule 
+of three. I also used what I learned throughout the semester to 
+read the user inputs by using get, getline, ignore and more and 
+also correctly store that data into dynamically allocated spaces. 
+For this purpose I used a separate Utility module that can handle 
+the most character string operations like calculating length, 
+copying 1 string to another and also dynamically copying 1 string 
+to another. 

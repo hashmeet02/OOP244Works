@@ -1,0 +1,24 @@
+*******************************************************************
+Reflection Workshop 8 Part 2
+Name:			Hashmeet Singh Saini
+Seneca ID : hsaini28
+Student No. : 153070214
+Date : July 20, 2022
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*******************************************************************
+This workshop dived deeper into the concept of abstract classes and 
+pure virtual function. I learned how to create an interface header 
+file that involves. An abstract class where all the member 
+functions are virtual(here, iAccount). Then I proceeded to learn 
+how to derive a base class from this interface called Account and 
+use that further to create two derived classes. This workshop 
+helped me properly visualize the concept of inheritance in object 
+orientation. It further helped me learn how the pure virtual 
+functions are implemented in the derived class, and what are the 
+differences between an abstract and concrete class. The toughest part 
+of this workshop was getting accustomed to the new technical terms 
+mentioned above, and I was able to do this by going through the 
+weekly notes. The tricky part of visualizing the hierarchy was fulfilled 
+by the illustration provided in the workshop instructions which greatly 
+helped in simplifying the design of the code.
