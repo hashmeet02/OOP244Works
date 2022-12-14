@@ -1,16 +1,17 @@
-// Final Project Milestone 4
+// Final Project Milestone 55
 // File  Lib.h
-// Version 1.0
+// Version 2.0
 // Author  Hashmeet Singh Saini
 // Revision History
 // -----------------------------------------------------------
 // Name                    Date                 Reason
 // Hashmeet Singh Saini    July 23rd            Preliminary
+// Hashmeet Singh Saini    July 30th            SDDS_LIBRARY_CAPACITY has been changed to 333
 // -----------------------------------------------------------
 // Name:			Hashmeet Singh Saini
 // Seneca ID : hsaini28
 // Student No. : 153070214
-// Date : July 25th, 2022
+// Date : July 30th, 2022
 // 
 // I have done all the coding by myselfand only copied the code
 // that my professor provided to complete my project milestones.

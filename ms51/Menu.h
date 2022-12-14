@@ -1,4 +1,4 @@
-// Final Project Milestone 2
+// Final Project Milestone 51
 // Menu Module
 // File  Menu.h
 // Version 2.0
@@ -12,7 +12,7 @@
 // Name:			Hashmeet Singh Saini
 // Seneca ID : hsaini28
 // Student No. : 153070214
-// Date : July 14, 2022
+// Date : July 30th, 2022
 // 
 // I have done all the coding by myselfand only copied the code
 // that my professor provided to complete my project milestones.

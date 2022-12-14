@@ -1,20 +1,17 @@
-// Final Project Milestone 4
-// Date Module
-// File  Date.h
-// Version 2.0
-// Author   Hashmeet Singh Saini
+// Final Project Milestone 55
+// Book Module
+// File  Book.h
+// Version 1.0
+// Author  Hashmeet Singh Saini
 // Revision History
 // -----------------------------------------------------------
 // Name                    Date                 Reason
-// Hashmeet Singh Saini    July 10th            Preliminary
-// Hashmeet Singh Saini    July 23rd            setToToday function is now a public function so that that it 
-//                                              can be easily be called by other modules easily. 4 external 
-//                                              variables also added
+// Hashmeet Singh Saini    July 25th            Preliminary
 // -----------------------------------------------------------
 // Name:			Hashmeet Singh Saini
 // Seneca ID : hsaini28
 // Student No. : 153070214
-// Date : July 25, 2022
+// Date : July 30th, 2022
 // 
 // I have done all the coding by myselfand only copied the code
 // that my professor provided to complete my project milestones.

@@ -2,7 +2,7 @@
 // OOP244 Utils Module:
 // File  utils.cpp
 // Version 1.0
-// Date July 23rd 2022
+// Date July 30th 2022
 // Author Hashmeet Singh Saini
 // Description Utility module for extra basic features to be used in the project
 //
@@ -14,7 +14,7 @@
 // Name:			Hashmeet Singh Saini
 // Seneca ID : hsaini28
 // Student No. : 153070214
-// Date : July 25th, 2022
+// Date : July 30th, 2022
 //
 // I have done all the coding by myselfand only copied the code
 // that my professor provided to complete my project milestones.

@@ -1,17 +1,19 @@
-// Final Project Milestone 2
+// Final Project Milestone 51
 // LibApp Module
 // File  LibApp.cpp
-// Version 1.0
+// Version 2.0
 // Author   Hashmeet Singh Saini
 // Revision History
 // -----------------------------------------------------------
 // Name                    Date              Reason
 // Hashmeet Singh Saini    July 14th            Preliminary
+// Hashmeet Singh Saini	   July 30th			creation of load, save, search , returnPub, getPub, newPublication
+//												removePublication, checkOutPub
 // -----------------------------------------------------------
 // Name:			Hashmeet Singh Saini
 // Seneca ID : hsaini28
 // Student No. : 153070214
-// Date : July 14, 2022
+// Date : July 30th, 2022
 // 
 // I have done all the coding by myselfand only copied the code
 // that my professor provided to complete my project milestones.
@@ -60,7 +62,6 @@ namespace sdds {
 			}
 			m_lastRefNum = m_publication[m_numLoadedPubs - 1]->getRef();
 		}
-		/*m_lastRefNum = m_publication[m_numLoadedPubs - 1]->getRef();*/
 
 	}
 	void LibApp::save()
@@ -209,12 +210,6 @@ namespace sdds {
 			}
 			else {
 				m_lastRefNum += 1;
-				/*if (selection == 1) {
-					m_publication[m_numLoadedPubs] = new Book;
-				}
-				else if (selection == 2) {
-					m_publication[m_numLoadedPubs] = new Publication;
-				}*/
 				m_publication[m_numLoadedPubs] = tempPub;
 				m_publication[m_numLoadedPubs]->setRef(m_lastRefNum);
 				m_numLoadedPubs += 1;
@@ -322,30 +317,6 @@ namespace sdds {
 		cout << endl;
 		cout << "-------------------------------------------" << endl;
 		cout << "Thanks for using Seneca Library Application" << endl;
-		//do {
-		//    selection1 = m_mainMenu.run();
-		//    if (selection1) {
-		//        if (selection1 == 1) {
-		//            newPublication();
-		//        }
-		//        else if (selection1 == 2) {
-		//            removePublication();
-		//        }
-		//        else if (selection1 == 3) {
-		//            checkOutPub();
-		//        }
-		//        else if (selection1 == 4) {
-		//            returnPub();
-		//        }
-
-		//    }
-		//} while (selection1 != 0 || (selection2=(m_exitMenu.run()))!=2);
-		//if (selection2 == 1) {
-		//    save();
-		//}
-		//else if (selection2 == 0) {
-		//    confirm("This will discard all the changes are you sure?")
-		//}
 
 	}
 }

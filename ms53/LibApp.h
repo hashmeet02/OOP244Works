@@ -1,17 +1,19 @@
-// Final Project Milestone 2
+// Final Project Milestone 53
 // LibApp Module
 // File  LibApp.h
-// Version 1.0
+// Version 2.0
 // Author   Hashmeet Singh Saini
 // Revision History
 // -----------------------------------------------------------
 // Name                    Date              Reason
 // Hashmeet Singh Saini    July 14th            Preliminary
+// Hashmeet Singh Saini    July 30th            Addition of new attributes
+// 
 // -----------------------------------------------------------
 // Name:			Hashmeet Singh Saini
 // Seneca ID : hsaini28
 // Student No. : 153070214
-// Date : July 14, 2022
+// Date : July 30th, 2022
 // 
 // I have done all the coding by myselfand only copied the code
 // that my professor provided to complete my project milestones.
